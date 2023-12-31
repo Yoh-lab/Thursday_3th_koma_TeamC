@@ -1,15 +1,21 @@
 import React from 'react'
 import { useEffect } from "react";
 import {
-  Box, Flex, Heading, Text, Image, Stack, HStack, Container, VStack
+  Box,
+  Text,
+  Image,
+  Stack,
+  HStack,
+  VStack
 } from '@chakra-ui/react';
 import HeaderImage from "../assets/HeaderImage.png";
 import ParisImage from "../assets/ParisImage.png";
-import Sports1 from "../assets/Sports1.png";
-import Sports2 from "../assets/Sports2.png";
-import Sports3 from "../assets/Sports3.png";
-import Sports4 from "../assets/Sports4.png";
 import JapanFlag from "../assets/JapanFlag.png";
+import ItemClimbing from '../components/sportsItems/ItemClimbing';
+import ItemSkateboard from '../components/sportsItems/ItemSkateboard';
+import ItemBreaking from '../components/sportsItems/ItemBreaking';
+import ItemSurfing from '../components/sportsItems/ItemSurfing';
+import CountDown from '../components/CountDown';
 
 const HomePage = () => {
   useEffect(() => {
@@ -34,7 +40,7 @@ const HomePage = () => {
           backgroundImage: `url(${HeaderImage})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          height: "30vh",
+          height: "40vh",
           width: "100vw",
           display: "flex",
           flexDirection: "column",
@@ -42,18 +48,14 @@ const HomePage = () => {
           justifyContent: "center",
         }}
       >
-        <Stack>
-          <Text fontSize="5xl" color="white" as="b">
+        <Stack spacing={0} marginTop={0}>
+          <Text fontSize="4xl" color="white" as="b">
             第33回オリンピック競技大会
           </Text>
-          <HStack spacing={10}>
-            <Text fontSize="8xl" color="white" as="b">
-              PARIS 2024
-            </Text>
-            <Text fontSize={{ base: '36px', md: '40px', lg: '42px' }} color="white" as="b">
-              開催まであと◯時間◯分◯秒
-            </Text>
-          </HStack>
+          <Text fontSize="8xl" color="white" as="b">
+            PARIS 2024
+          </Text>
+          <CountDown />
         </Stack>
       </section>
 
@@ -101,30 +103,11 @@ const HomePage = () => {
             </Text>
           </Box>
           <HStack spacing={50} marginLeft={10} marginRight={10}>
-            <VStack>
-              <Image src={Sports1} />
-              <Text fontSize="xl" color="black" as="b">
-                スポーツクライミング
-              </Text>
-            </VStack>
-            <VStack>
-              <Image src={Sports2} />
-              <Text fontSize="xl" color="black" as="b">
-                スケートボード
-              </Text>
-            </VStack>
-            <VStack>
-              <Image src={Sports3} />
-              <Text fontSize="xl" color="black" as="b">
-                ブレイキン
-              </Text>
-            </VStack>
-            <VStack>
-              <Image src={Sports4} />
-              <Text fontSize="xl" color="black" as="b">
-                サーフィン
-              </Text>
-            </VStack>
+            <ItemClimbing />
+            <ItemSkateboard />
+            <ItemBreaking />
+            <ItemSurfing />
+
           </HStack>
         </VStack>
       </section>
