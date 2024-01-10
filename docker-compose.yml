@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  team-c-app:
+    image: myasukura/team_c_app:1.0
+    command: >
+      sh -c "
+      cd team-c &&
+      npm start
+      "
+    ports:
+      - "3000:3000"
+
