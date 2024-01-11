@@ -51,7 +51,7 @@ const NotablePlayerButton = (props) => {
                         <HStack spacing={10} marginTop={10} marginBottom={10} marginLeft={10} marginRight={10}>
                             <Image src={thumbnail_image} />
                             <VStack>
-                                <Text fontSize="xl" color="black" as="b">{playerName}</Text>
+                                {/* <Text fontSize="xl" color="black" as="b">{playerName}</Text> */}
                                 <Text fontSize="xl" color="black" as="b">{title}</Text>
                                 <Text fontSize="xl" color="black" as="b">{explanation}</Text>
                                 <Button colorScheme='blue' mr={3} onClick={onClose}>
