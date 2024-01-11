@@ -33,12 +33,12 @@ const SportsButton = (props) => {
                 </Square> */}
                 <Text fontSize="xl" color="black" as="b">{title}</Text>
             </VStack>
-            <Modal isOpen={isOpen} onClose={onClose}
-                style={{
-                    // height: "70vh",
-                    width: "100%",
-                    backgroundColor: "blue",
-                }}
+            <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}//これでモーダルのサイズを指定できる．
+            // style={{
+            //     // height: "70vh",
+            //     width: "100%",
+            //     backgroundColor: "blue",
+            // }}
             >
                 <ModalOverlay />
                 <ModalContent
@@ -57,11 +57,14 @@ const SportsButton = (props) => {
                         }}
                     >
                         <HStack spacing={10} marginTop={10} marginBottom={10} marginLeft={10} marginRight={10}>
-                            <Image src={thumbnail_image} />
+                            <Image src={thumbnail_image} boxSize={{ sm: "250", md: "250", lg: "300" }} />
                             <VStack>
-                                <Text fontSize="xl" color="black" as="b">{title}</Text>
+                                <Text fontSize="3xl" color="black" as="b">{title}</Text>
+                                <Box marginTop="6" />
                                 <Text fontSize="xl" color="black" as="b">{rule}</Text>
+
                                 <Text fontSize="xl" color="black" as="b">{highlight}</Text>
+                                <Box marginTop="6" />
                                 <Button colorScheme='blue' mr={3} onClick={onClose}>
                                     Close
                                 </Button>

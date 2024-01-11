@@ -25,12 +25,7 @@ const NotablePlayerButton = (props) => {
                 <Image src={thumbnail_image} onClick={onOpen} />
                 <Text fontSize="xl" color="black" as="b">{title}</Text>
             </VStack>
-            <Modal isOpen={isOpen} onClose={onClose}
-                style={{
-                    // height: "70vh",
-                    width: "100%",
-                    backgroundColor: "blue",
-                }}
+            <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}
             >
                 <ModalOverlay />
                 <ModalContent
@@ -52,8 +47,10 @@ const NotablePlayerButton = (props) => {
                             <Image src={thumbnail_image} />
                             <VStack>
                                 {/* <Text fontSize="xl" color="black" as="b">{playerName}</Text> */}
-                                <Text fontSize="xl" color="black" as="b">{title}</Text>
+                                <Text fontSize="3xl" color="black" as="b">{title}</Text>
+                                <Box marginTop="6" />
                                 <Text fontSize="xl" color="black" as="b">{explanation}</Text>
+                                <Box marginTop="10" />
                                 <Button colorScheme='blue' mr={3} onClick={onClose}>
                                     Close
                                 </Button>
