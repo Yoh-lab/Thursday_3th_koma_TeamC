@@ -35,7 +35,7 @@ const SportsItems = () => {
                 }}
             >
                 <HStack spacing={50} marginLeft={10} marginRight={10}>
-                    <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={10}
+                    <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={20}
                         style={{
                             // width: "80vw",
                             // backgroundColor: "blue",
@@ -48,6 +48,7 @@ const SportsItems = () => {
                                     thumbnail_image={getData[key].image}
                                     rule={getData[key].rule}
                                     highlight={getData[key].highlight}
+                                    icon={getData[key].icon}
                                 />
                             ))
                         }

@@ -2,6 +2,7 @@ import { useState, useEffect, React } from "react";
 import {
     HStack,
     CircularProgress,
+    SimpleGrid,
 } from '@chakra-ui/react'
 import HandleGetData from "../firebase/GetNotablePlayerItemData";
 // import SportsButton from "./SportsButton";
@@ -29,16 +30,25 @@ const SportsItems = () => {
         return (
             <>
                 <HStack spacing={50} marginLeft={10} marginRight={10}>
-                    {
-                        Object.keys(getData).map((key) => (
-                            <NotablePlayerButton
-                                title={getData[key].title}
-                                thumbnail_image={getData[key].image}
-                                playerName={getData[key].name}
-                                explanation={getData[key].explanation}
-                            />
-                        ))
-                    }
+                    <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={10}
+                        style={{
+                            // width: "80vw",
+                            // backgroundColor: "blue",
+                        }}
+                    >
+                        {
+                            Object.keys(getData).map((key) => (
+                                <NotablePlayerButton
+                                    title={getData[key].title}
+                                    icon={getData[key].icon}
+                                    thumbnail_image={getData[key].image}
+                                    playerName={getData[key].name}
+                                    sports={getData[key].sports}
+                                    explanation={getData[key].explanation}
+                                />
+                            ))
+                        }
+                    </SimpleGrid>
                 </HStack>
             </>
         )

@@ -16,13 +16,14 @@ const SportsButton = (props) => {
     const title = props.title;
     // const description = props.description;
     const thumbnail_image = props.thumbnail_image;
+    const icon = props.icon;
     const rule = props.rule;
     const highlight = props.highlight;
     const { isOpen, onOpen, onClose } = useDisclosure()
     return (
         <div>
             <VStack>
-                <Image src={thumbnail_image} onClick={onOpen} boxSize={{ sm: "250", md: "250", lg: "250" }} />
+                <Image src={thumbnail_image} onClick={onOpen} boxSize={{ sm: "250", md: "250", lg: "250" }} rounded="lg" />
                 {/* <Square size={{ sm: "100", md: "150", lg: "250" }}
                     style={{
                         backgroundColor: "red",
@@ -31,7 +32,10 @@ const SportsButton = (props) => {
                 >
                     <Image src={thumbnail_image} onClick={onOpen} />
                 </Square> */}
-                <Text fontSize="xl" color="black" as="b">{title}</Text>
+                <HStack>
+                    <Image src={icon} boxSize={{ sm: "10", md: "10", lg: "10" }} />
+                    <Text fontSize="xl" color="black" as="b">{title}</Text>
+                </HStack>
             </VStack>
             <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}//これでモーダルのサイズを指定できる．
             // style={{

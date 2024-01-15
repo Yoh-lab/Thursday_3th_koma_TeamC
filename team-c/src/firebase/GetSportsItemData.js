@@ -20,6 +20,7 @@ const HandleGetData = async () => {
       rule: doc.data().rule,
       highlight: doc.data().highlight,
       image: doc.data().image,
+      icon: doc.data().icon,
     }));
     console.log(dataArr);
     return dataArr;

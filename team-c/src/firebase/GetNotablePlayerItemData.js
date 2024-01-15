@@ -17,10 +17,12 @@ const HandleGetData = async () => {
     const dataArr = docSnap.docs.map(doc => ({
       title: doc.data().title,
       name: doc.data().name,
+      sports: doc.data().sports,
       explanation: doc.data().explanation,
       image: doc.data().image,
+      icon: doc.data().icon,
     }));
-    console.log(dataArr);
+    // console.log(dataArr);
     return dataArr;
 
     // navigate("/talk", { state: { selectedFile } });

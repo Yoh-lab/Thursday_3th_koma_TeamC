@@ -66,7 +66,7 @@ const HomePage = () => {
 
       <section
         style={{
-          height: "70vh",
+          // height: "70vh",
           width: "100vw",
           display: "flex",
           flexDirection: "column",
@@ -76,7 +76,7 @@ const HomePage = () => {
         }}
       >
         <HStack spacing={50} marginLeft={10} marginRight={10}>
-          <Image src={ParisImage} boxSize={{ sm: "250", md: "250", lg: "500" }} />
+          <Image src={ParisImage} boxSize={{ sm: "250", md: "250", lg: "400" }} />
           <VStack>
             <Text fontSize="5xl" color="blue" as="b">
               概要
@@ -106,7 +106,7 @@ const HomePage = () => {
             width: "90vw", display: "flex",
             flexDirection: "raw", justifyContent: "start",
           }}>
-            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="blue" as="b">
+            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="blue" as="b" marginBottom="50px">
               新競技
             </Text>
           </Box>
@@ -121,7 +121,7 @@ const HomePage = () => {
       </section>
       <section
         style={{
-          height: "60vh",
+          // height: "60vh",
           width: "100vw",
           display: "flex",
           flexDirection: "column",
@@ -135,7 +135,7 @@ const HomePage = () => {
             width: "90vw", display: "flex",
             flexDirection: "raw", justifyContent: "start",
           }}>
-            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="blue" as="b">
+            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="blue" as="b" marginBottom="50px">
               注目の日本人選手
             </Text>
           </Box>
