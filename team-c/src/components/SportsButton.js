@@ -23,7 +23,7 @@ const SportsButton = (props) => {
     return (
         <div>
             <VStack>
-                <Image src={thumbnail_image} onClick={onOpen} boxSize={{ sm: "250", md: "250", lg: "250" }} rounded="lg" />
+                <Image src={thumbnail_image} onClick={onOpen} boxSize={{ sm: "250", md: "250", lg: "215", xl: "250" }} rounded="lg" />
                 {/* <Square size={{ sm: "100", md: "150", lg: "250" }}
                     style={{
                         backgroundColor: "red",
@@ -34,7 +34,7 @@ const SportsButton = (props) => {
                 </Square> */}
                 <HStack>
                     <Image src={icon} boxSize={{ sm: "10", md: "10", lg: "10" }} />
-                    <Text fontSize="xl" color="black" as="b">{title}</Text>
+                    <Text fontSize={{ sm: "xl", md: "xl", lg: "md", xl: "xl" }} color="black" as="b">{title}</Text>
                 </HStack>
             </VStack>
             <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}//これでモーダルのサイズを指定できる．

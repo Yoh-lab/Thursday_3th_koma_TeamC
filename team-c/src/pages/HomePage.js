@@ -75,14 +75,14 @@ const HomePage = () => {
           marginTop: "10vh",
         }}
       >
-        <HStack spacing={50} marginLeft={10} marginRight={10}>
-          <Image src={ParisImage} boxSize={{ sm: "250", md: "250", lg: "400" }} />
-          <VStack>
-            <Text fontSize="5xl" color="blue" as="b">
+        <HStack spacing={{ sm: "5", md: "25", lg: "50", xl: "150" }} marginLeft={{ sm: "5", md: "10" }} marginRight={{ sm: "5", md: "10" }}>
+          <Image src={ParisImage} boxSize={{ sm: "200", md: "300", lg: "400" }} rounded="xl" />
+          <VStack width={{ sm: "300px", md: "300px", lg: "450px", xl: "650px" }}>
+            <Text fontSize={{ sm: "4xl", md: "5xl", lg: "5xl", xl: "5xl" }} color="blue" as="b">
               概要
             </Text>
             {abstruct_lines.map((line) => (
-              <Text fontSize="xl" color="black" as="b" textAlign={'left'}>
+              <Text fontSize={{ sm: "sm", md: "lg", lg: "xl", xl: "2xl" }} color="black" as="b" textAlign={'left'}>
                 {line}
               </Text>
             ))}
