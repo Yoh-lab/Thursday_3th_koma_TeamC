@@ -29,8 +29,8 @@ const SportsItems = () => {
     } else {
         return (
             <>
-                <HStack spacing={50} marginLeft={10} marginRight={10}>
-                    <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={{ sm: 12, md: 32, lg: 8, xl: 32 }}
+                <HStack>
+                    <SimpleGrid columns={{ sm: 1, md: 2, lg: 4 }} spacing={{ sm: 12, md: 32, lg: 8, xl: 16 }}
                         style={{
                             // width: "80vw",
                             // backgroundColor: "blue",

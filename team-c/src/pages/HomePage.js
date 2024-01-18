@@ -67,22 +67,23 @@ const HomePage = () => {
       <section
         style={{
           // height: "70vh",
-          width: "100vw",
+          width: "50vw",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "10vh",
+          marginTop: "20vh",
+
         }}
       >
-        <HStack spacing={{ sm: "5", md: "25", lg: "50", xl: "150" }} marginLeft={{ sm: "5", md: "10" }} marginRight={{ sm: "5", md: "10" }}>
+        <HStack spacing={{ sm: "5", md: "25", lg: "50", xl: "150" }}>
           <Image src={ParisImage} boxSize={{ sm: "200", md: "300", lg: "400" }} rounded="xl" />
-          <VStack width={{ sm: "300px", md: "300px", lg: "450px", xl: "650px" }}>
-            <Text fontSize={{ sm: "4xl", md: "5xl", lg: "5xl", xl: "5xl" }} color="blue" as="b">
+          <VStack width={{ sm: "300px", md: "300px", lg: "450px", xl: "1000px" }}>
+            <Text fontSize={{ sm: "4xl", md: "5xl", lg: "5xl", xl: "5xl" }} color="#58A8F7" as="b">
               概要
             </Text>
             {abstruct_lines.map((line) => (
-              <Text fontSize={{ sm: "sm", md: "lg", lg: "xl", xl: "2xl" }} color="black" as="b" textAlign={'left'}>
+              <Text fontSize={{ sm: "sm", md: "lg", lg: "xl", xl: "xl" }} color="black" as="b" textAlign={'left'}>
                 {line}
               </Text>
             ))}
@@ -93,20 +94,20 @@ const HomePage = () => {
       <section
         style={{
           // height: "60vh",
-          width: "100vw",
+          // width: "50vw",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "10vh",
+          marginTop: "15vh",
         }}
       >
         <VStack>
           <Box style={{
-            width: "90vw", display: "flex",
+            width: "60vw", display: "flex",
             flexDirection: "raw", justifyContent: "start",
           }}>
-            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="blue" as="b" marginBottom="50px">
+            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="#58A8F7" as="b" marginBottom="30px">
               新競技
             </Text>
           </Box>
@@ -122,20 +123,20 @@ const HomePage = () => {
       <section
         style={{
           // height: "60vh",
-          width: "100vw",
+          width: "50vw",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "10vh",
+          marginTop: "15vh",
         }}
       >
-        <VStack>
+        <VStack marginBottom="30px">
           <Box style={{
-            width: "90vw", display: "flex",
+            width: "60vw", display: "flex",
             flexDirection: "raw", justifyContent: "start",
           }}>
-            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="blue" as="b" marginBottom="50px">
+            <Text fontSize={{ sm: "4xl", md: "6xl", lg: "6xl" }} color="#58A8F7" as="b" marginBottom="30px">
               注目の日本人選手
             </Text>
           </Box>

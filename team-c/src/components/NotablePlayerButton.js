@@ -24,8 +24,7 @@ const NotablePlayerButton = (props) => {
     return (
         <div>
             <VStack>
-
-                <Image src={thumbnail_image} onClick={onOpen} boxSize={{ sm: "200", md: "200", lg: "200px" }} />
+                <Image src={thumbnail_image} onClick={onOpen} />
                 <HStack>
                     <Image src={icon} boxSize={{ sm: "10", md: "10", lg: "10" }} />
                     <Text fontSize="xl" color="black" as="b">{playerName}</Text>
