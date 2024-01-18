@@ -45,19 +45,20 @@ const HomePage = () => {
           backgroundImage: `url(${HeaderImage})`,
           backgroundPosition: "center",
           backgroundSize: "cover",
-          height: "40vh",
+          height: "100vh",
           width: "100vw",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
         }}
+
       >
         <Stack spacing={0} marginTop={0}>
-          <Text fontSize={{ sm: "3xl", md: "4xl", lg: "4xl" }} color="white" as="b">
+          <Text fontSize={{ sm: "3xl", md: "4xl", lg: "6xl" }} color="white" as="b" marginTop="100">
             第33回オリンピック競技大会
           </Text>
-          <Text fontSize={{ sm: "7xl", md: "8xl", lg: "8xl" }} color="white" as="b">
+          <Text fontSize={{ sm: "7xl", md: "8xl", lg: "9xl" }} color="white" as="b" marginBottom="100">
             PARIS 2024
           </Text>
           <CountDown />
@@ -83,7 +84,7 @@ const HomePage = () => {
               概要
             </Text>
             {abstruct_lines.map((line) => (
-              <Text fontSize={{ sm: "sm", md: "lg", lg: "xl", xl: "xl" }} color="black" as="b" textAlign={'left'}>
+              <Text fontSize={{ sm: "sm", md: "lg", lg: "xl", xl: "xl" }} color="#474747" as="b" textAlign={'left'}>
                 {line}
               </Text>
             ))}
@@ -143,7 +144,7 @@ const HomePage = () => {
           <NotablePlayerItems />
           {/* <HStack spacing={50} marginLeft={10} marginRight={10}>
             <Image src={JapanFlag} />
-            <Text fontSize="xl" color="black" as="b">
+            <Text fontSize="xl" color="#474747" as="b">
               hogehogehogehogehogehoge
             </Text>
           </HStack> */}

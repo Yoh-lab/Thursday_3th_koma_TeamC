@@ -34,7 +34,7 @@ const SportsButton = (props) => {
                 </Square> */}
                 <HStack>
                     <Image src={icon} boxSize={{ sm: "10", md: "10", lg: "10" }} />
-                    <Text fontSize={{ sm: "xl", md: "xl", lg: "md", xl: "xl" }} color="black" as="b">{title}</Text>
+                    <Text fontSize={{ sm: "xl", md: "xl", lg: "md", xl: "xl" }} color="#474747" as="b">{title}</Text>
                 </HStack>
             </VStack>
             <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}//これでモーダルのサイズを指定できる．
@@ -63,11 +63,14 @@ const SportsButton = (props) => {
                         <HStack spacing={10} marginTop={10} marginBottom={10} marginLeft={10} marginRight={10}>
                             <Image src={thumbnail_image} boxSize={{ sm: "250", md: "250", lg: "300" }} />
                             <VStack>
-                                <Text fontSize="3xl" color="black" as="b">{title}</Text>
+                                <HStack>
+                                    <Image src={icon} boxSize={{ sm: "10", md: "10", lg: "10" }} />
+                                    <Text fontSize="3xl" color="#474747" as="b">{title}</Text>
+                                </HStack>
                                 <Box marginTop="6" />
-                                <Text fontSize="xl" color="black" as="b">{rule}</Text>
+                                <Text fontSize="xl" color="#474747" as="b">{rule}</Text>
 
-                                <Text fontSize="xl" color="black" as="b">{highlight}</Text>
+                                <Text fontSize="xl" color="#474747" as="b">{highlight}</Text>
                                 <Box marginTop="6" />
                                 <Button colorScheme='blue' mr={3} onClick={onClose}>
                                     Close

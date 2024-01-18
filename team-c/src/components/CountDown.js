@@ -31,7 +31,7 @@ const CountDown = () => {
     }, []);
     return (
         // <Text fontSize={{ base: '36px', md: '40px', lg: '42px' }} color="white" as="b">
-        <Text fontSize={{ sm: "2xl", md: "4xl" }} color="white" as="b">
+        <Text fontSize={{ sm: "2xl", md: "6xl" }} color="white" as="b">
             {displayString}
         </Text >
     )

@@ -27,7 +27,7 @@ const NotablePlayerButton = (props) => {
                 <Image src={thumbnail_image} onClick={onOpen} />
                 <HStack>
                     <Image src={icon} boxSize={{ sm: "10", md: "10", lg: "10" }} />
-                    <Text fontSize="xl" color="black" as="b">{playerName}</Text>
+                    <Text fontSize="xl" color="#474747" as="b">{playerName}</Text>
                 </HStack>
             </VStack>
             <Modal isOpen={isOpen} onClose={onClose} size={"4xl"}
@@ -51,15 +51,15 @@ const NotablePlayerButton = (props) => {
                         <HStack spacing={10} marginTop={10} marginBottom={10} marginLeft={10} marginRight={10}>
                             <Image src={thumbnail_image} />
                             <VStack>
-                                {/* <Text fontSize="xl" color="black" as="b">{playerName}</Text> */}
+                                {/* <Text fontSize="xl" color="#474747" as="b">{playerName}</Text> */}
                                 <HStack>
                                     <Image src={icon} boxSize={{ sm: "10", md: "10", lg: "10" }} />
-                                    <Text fontSize="3xl" color="black" as="b">{sports}</Text>
-                                    <Text fontSize="3xl" color="black" as="b"> </Text>
-                                    <Text fontSize="3xl" color="black" as="b">{playerName}</Text>
+                                    <Text fontSize="3xl" color="#474747" as="b">{sports}</Text>
+                                    <Text fontSize="3xl" color="#474747" as="b"> </Text>
+                                    <Text fontSize="3xl" color="#474747" as="b">{playerName}</Text>
                                 </HStack>
                                 <Box marginTop="6" />
-                                <Text fontSize="xl" color="black" as="b">{explanation}</Text>
+                                <Text fontSize="xl" color="#474747" as="b">{explanation}</Text>
                                 <Box marginTop="10" />
                                 <Button colorScheme='blue' mr={3} onClick={onClose}>
                                     閉じる
