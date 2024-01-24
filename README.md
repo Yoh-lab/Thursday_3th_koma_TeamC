@@ -9,5 +9,5 @@
 5. 成功していれば制作物であるオリンピックに関するサイトが表示される
 
 ## dockerイメージのURL
-過去のバージョンも含めた全てのイメージは https://hub.docker.com/r/myasukura/team_c_app より確認出来ます。<br>
+過去のバージョンも含めた全てのイメージは https://hub.docker.com/r/myasukura/team_c_app/tags より確認出来ます。<br>
 最新バージョンのイメージのTAGは"4.0"で https://hub.docker.com/layers/myasukura/team_c_app/4.0/images/sha256-81422b802361ac59c77c96d68278b3becb8cfb7341868eabdfe62a34164c91d4?tab=layers より確認できます。
