@@ -2,7 +2,7 @@
 先端ソフトウェア環境構築実践のチーム開発用レポジトリ
 
 ## アプリの起動方法(linux環境を想定, docker-composeを利用)
-1. このREADME.mdがあるディレクトリに移動する
+1. このREADME.md(正確にはdocker-compose.ymlファイル)があるディレクトリに移動する
 2. sudo service docker start を実行してdockerデーモンを起動する
 3. sudo docker-compose up -d を実行してdockerコンテナを作成&起動
 4. Google Chrome等のブラウザで　http://localhost:3000/ にアクセス(Google Chrome以外未検証)
